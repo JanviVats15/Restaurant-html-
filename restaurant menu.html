@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+Restaurant Menu - Delicious Eats
+    </title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f8f8f8;
+        font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, Helvetica, sans-serif;
+        color: #333;
+      }
+      header {
+        text-align: center;
+        background-color: #ffcc00;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-top: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+      main{
+        padding: 50px;
+        background-color: #e395bb;
+        text-align: center;
+      }     
+      .menu-item-image {
+        width: 500px;
+        height: 500px;
+        border-radius: 30px;
+      } 
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #ffcc00;
+      }
+      </style>
+ </head>
+
+ <body>
+  <header>
+    <img src ="https://i.pinimg.com/736x/1a/b2/36/1ab2360d51b31727fb87599734a7429d.jpg"
+    id="header-img" alt="Delicious Eats jelly cake" width="500" height="500">
+  
+    <h1>
+      Delicious Eats
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order-form">Order Form</a></li>
+      </ul>
+      </nav>
+  </header>
+  <main>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <hr>
+      <article>
+        <h3> Rice cakes with tea</h3>
+        <img src="https://i.pinimg.com/736x/46/94/ac/4694acad3c2ae390e388de93472a7b53.jpg" class="menu-item-image">
+        <p>A comforting combo of soft, chewy rice cakes served warm with your choice of aromatic tea. <br>
+           Perfect for a light snack or a peaceful break in your day. 
+          <br> <br>
+        <b>Price:</b><i>$5.99</i></p>
+      </article>
+    <hr>
+      <article>
+        <h3>
+          Mango Sticky Rice Delight
+        </h3>
+        <img src="https://i.pinimg.com/736x/65/ca/31/65ca310b13af9c6ab34349bbc5679d7d.jpg" class="menu-item-image">
+        <p>
+          A tropical favorite made with fragrant sticky rice, topped with juicy golden mango cubes and a drizzle of sweet coconut cream. <br>
+           Served with fresh mint, lime slices, and a side of chilled mango juice — a refreshing, creamy, and irresistible dessert that melts in your mouth.
+           <br> <br>
+          <b>Price:</b><i>$8.99</i>
+        </p>
+      </article>
+      <hr>
+      <article>
+        <h3> 
+          Lemon Cream Burst Buns
+        </h3>
+        <img src="https://i.pinimg.com/736x/cc/eb/f9/ccebf93dbfe59dfa854955898069b36d.jpg" class="menu-item-image">
+        <p>
+          Soft, fluffy buns filled with a zesty lemon cream that bursts with flavor in every bite. <br>
+          Perfectly paired with a cup of hot tea or coffee for a delightful afternoon treat.
+          <br> <br>
+          <b>Price:</b><i>$4.99</i>
+          </p>
+      </article>
+      <hr>
+      <article>
+        <h3>
+          Rainbow Mochi Party Platter
+        </h3>
+        <img src="https://i.pinimg.com/736x/bb/3e/fc/bb3efcf1c2b1f41a3eebe0ce4ff075e8.jpg" class="menu-item-image">
+        <p>
+          A colorful assortment of chewy mochi filled with a variety of sweet fillings, including red bean, matcha, and fruit flavors. <br>
+          Perfect for sharing at parties or enjoying as a delightful snack.
+          <br> <br>
+          <b>Price:</b><i>$12.99</i>
+        </p>
+      </article>
+      <hr>
+    </section>
+
+    <section id="order-form">
+      <h2>Place Your Order</h2>
+      <form action = "#" method="#">
+        <label for="name">Name:</label>
+        <input type="text"  name="name" required>
+<br><br>
+        <label for="item">How many?
+        </label>
+<br>
+        <label for="rice-cakes">Rice Cakes with Tea - $5.99</label>
+        <input type="number" min="0" max="10" > 
+        <br>
+        <label for="mango-sticky-rice">Mango Sticky Rice Delight - $8.99</label>
+       <input type="number" min="0" max="10" > 
+        <br>
+        <label for="lemon-cream-buns">Lemon Cream Burst Buns - $4.99</label>
+        <input type="number" min="0" max="10" > 
+        <br>
+        <label for="rainbow-mochi">Rainbow Mochi Party Platter - $12.99</label>
+      <input type="number" min="0" max="10" >  
+        <br><br><br>
+        <label for="Side add ons">Side Add-ons:</label><br>
+        <label for ="Extra coconut cream"> Extra Coconut cream (+$1.00)</label><input type="checkbox"> <br>
+        <label for ="Extra mango slices"> Extra Mango Slices (+$1.50)</label><input type="checkbox"><br>
+        <label for="Extra lemon zest"> Extra Lemon Zest (+$0.50)</label><input type="checkbox"><br>
+        <label for ="Add Bubble Tea"> Add Bubble Tea (+$3.00)</label><input type="checkbox"> <br>
+        <br> <br>
+        <label for="special-instructions">Special Instructions:</label><br>
+        <textarea name="special-instructions" rows="4" cols="50" placeholder="Any specific requests or dietary restrictions?"></textarea>
+        <br><br>
+      <input type="Submit" value="Go to Checkout">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy; 2023 Delicious Eats. All rights reserved. <br>
+      Made with love by @janvivat270
+    </p>
+  </footer>
+ </body>  
+ </html> 
